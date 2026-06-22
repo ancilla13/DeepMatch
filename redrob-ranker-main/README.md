@@ -1,394 +1,218 @@
-# Person 1 – Data Preparation & Feature Engineering
+# DeepMatch
 
-## Overview
+AI-Powered Candidate Discovery & Ranking Platform
 
-This module is responsible for preparing candidate and job description data for the AI-powered candidate ranking system.
-
-The goal of Person 1 is to transform raw candidate profiles and job descriptions into structured and machine-readable artifacts that can be used by the scoring and ranking modules.
+DeepMatch is an intelligent candidate ranking system designed to help recruiters identify the most relevant candidates from large talent pools. By combining semantic understanding, career trajectory analysis, behavioral intelligence, skill authenticity verification, and profile integrity checks, DeepMatch generates explainable candidate rankings that reduce manual screening effort and improve hiring efficiency.
 
 ---
 
-# Responsibilities
+## Problem Statement
 
-The preparation pipeline performs the following tasks:
+Recruiters often face challenges when evaluating large volumes of applications:
 
-1. Load candidate profiles
-2. Read the job description
-3. Generate semantic embeddings
-4. Extract structured candidate features
-5. Detect profile inconsistencies
-6. Generate role-level embeddings
-7. Save all precomputed artifacts
+* Manual resume screening is time-consuming
+* Keyword-based filtering misses strong candidates
+* Candidate quality assessment is inconsistent
+* Inflated or misleading profiles are difficult to detect
+* Identifying the best fit requires significant effort
 
-The generated outputs are consumed by:
-
-* Person 2 – Scoring Engine (`scorer.py`)
-* Person 3 – Ranking Pipeline (`rank.py`)
+DeepMatch addresses these challenges by transforming candidate profiles into structured intelligence and generating data-driven ranking scores.
 
 ---
 
-# Dataset Structure
+## Key Features
+
+### Semantic Candidate Matching
+
+Uses transformer-based embeddings to measure alignment between candidate profiles and job descriptions.
+
+### Skill Authenticity Analysis
+
+Evaluates whether claimed skills are supported by:
+
+* Experience duration
+* Proficiency levels
+* Endorsements
+* Assessment signals
+
+### Career Trajectory Evaluation
+
+Analyzes career progression patterns to identify candidates demonstrating meaningful growth and role advancement.
+
+### Behavioral Intelligence
+
+Incorporates recruiter engagement and activity-based signals to improve ranking quality.
+
+### Profile Integrity Checks
+
+Detects suspicious or inconsistent profiles through:
+
+* Employment overlap detection
+* Graduation-to-career timeline validation
+* Duration mismatch analysis
+* Unrealistic expertise claims
+
+### Explainable Rankings
+
+Provides evidence-based reasoning behind candidate scores, enabling transparent recruiter decision-making.
+
+---
+
+## System Architecture
 
 ```text
-dataset/
-└── [PUB] India_runs_data_and_ai_challenge/
-    └── India_runs_data_and_ai_challenge/
-        ├── candidate_schema.json
-        ├── candidates.jsonl
-        ├── sample_candidates.json
-        ├── job_description.docx
-        ├── README.docx
-        ├── redrob_signals_doc.docx
-        ├── submission_spec.docx
-        └── ...
-```
-
----
-
-# Candidate Schema
-
-Each candidate contains:
-
-```json
-{
-  "candidate_id": "...",
-  "profile": {},
-  "career_history": [],
-  "education": [],
-  "skills": [],
-  "certifications": [],
-  "languages": [],
-  "redrob_signals": {}
-}
-```
-
----
-
-# Job Description Processing
-
-The job description is loaded from:
-
-```text
-job_description.docx
-```
-
-The text is extracted using:
-
-```python
-python-docx
-```
-
-and converted into a single text document.
-
----
-
-# Candidate Text Blob Construction
-
-Each candidate is converted into a text blob:
-
-```text
-headline
-+
-summary
-+
-all role descriptions
-```
-
-Example:
-
-```text
-Senior Machine Learning Engineer
-Experienced AI engineer...
-Built recommendation systems...
-Developed NLP pipelines...
-...
-```
-
-This blob represents the candidate's professional profile.
-
----
-
-# Embedding Generation
-
-Model Used:
-
-```text
-sentence-transformers/all-MiniLM-L6-v2
-```
-
-Embedding Dimension:
-
-```text
-384
-```
-
-Generated Embeddings:
-
-1. Job Description Embedding
-2. Candidate Profile Embeddings
-3. Role-Level Embeddings
-
----
-
-# Candidate Features Extracted
-
-For every candidate, the following features are generated:
-
-## Experience Features
-
-* years_of_experience
-* earliest_job_year
-* total_career_months
-
-## Education Features
-
-* graduation_year
-
-## Career Features
-
-* companies worked
-* industries worked
-* current title
-* current company
-
-## Skills Features
-
-* skill names
-* proficiency levels
-* endorsements
-* duration
-
-## Behavioral Signals
-
-All Redrob behavioral signals are preserved for downstream scoring.
-
----
-
-# Profile Integrity Checks
-
-The pipeline performs several consistency checks.
-
-## Started Before Graduation
-
-Checks whether professional experience began significantly before graduation.
-
-```python
-started_before_graduating
+Raw Candidate Data + Job Description
+                │
+                ▼
+      Data Preparation Layer
+           (prepare.py)
+                │
+                ▼
+      Feature Engineering &
+       Embedding Generation
+                │
+                ▼
+         Scoring Engine
+           (scorer.py)
+                │
+                ▼
+        Candidate Ranking
+            (rank.py)
+                │
+                ▼
+      Recruiter Dashboard
+            (app.py)
 ```
 
 ---
 
-## Career Duration Validation
+## Candidate Evaluation Framework
 
-Compares:
+DeepMatch evaluates candidates across multiple dimensions:
 
-```text
-Declared Duration
-vs
-Actual Duration
-```
-
-from start and end dates.
-
-Output:
-
-```python
-duration_mismatch_count
-```
+| Dimension          | Purpose                                              |
+| ------------------ | ---------------------------------------------------- |
+| Semantic Fit       | Alignment between candidate profile and target role  |
+| JD Coverage        | Coverage of required skills and competencies         |
+| Skill Authenticity | Confidence in claimed expertise                      |
+| Career Trajectory  | Professional growth and progression                  |
+| Behavioral Signals | Engagement and responsiveness indicators             |
+| Profile Integrity  | Detection of inconsistencies and suspicious patterns |
 
 ---
 
-## Overlapping Roles
+## Repository Structure
 
-Detects overlapping employment periods.
-
-Output:
-
-```python
-has_overlapping_dates
+```text
+DeepMatch/
+└── redrob-ranker-main/
+    ├── .gitignore
+    ├── README.md
+    ├── prepare.py
+    ├── scorer.py
+    ├── rank.py
+    ├── app.py
+    └── requirements.txt
 ```
+
+### File Descriptions
+
+| File               | Description                                                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| `prepare.py`       | Data preparation, feature extraction, embedding generation, and integrity validation                 |
+| `scorer.py`        | Candidate scoring engine containing semantic, behavioral, authenticity, and trajectory scoring logic |
+| `rank.py`          | Candidate ranking and result generation pipeline                                                     |
+| `app.py`           | Recruiter-facing application and visualization layer                                                 |
+| `requirements.txt` | Project dependencies                                                                                 |
+| `README.md`        | Project documentation                                                                                |
 
 ---
 
-# Generated Files
+## Technology Stack
 
-The following files are written to:
+### Core Technologies
 
-```text
-precomputed/
-```
+* Python
+* NumPy
+* Sentence Transformers
+* Scikit-Learn
+* python-docx
 
-## 1. Job Description Embedding
+### AI & NLP
 
-```text
-jd_embedding.npy
-```
+* all-MiniLM-L6-v2 Embeddings
+* Semantic Similarity Search
+* Feature-Based Candidate Intelligence
 
-Contains:
+### Future Expansion
 
-```text
-384-dimensional JD vector
-```
-
----
-
-## 2. Candidate Embeddings
-
-```text
-candidate_embeddings.npy
-```
-
-Contains:
-
-```text
-N × 384 matrix
-```
-
-where N = number of candidates.
+* Streamlit Dashboard
+* Vector Search Infrastructure
+* Advanced Candidate Recommendations
 
 ---
 
-## 3. Candidate IDs
+## Workflow
 
-```text
-candidate_ids.txt
-```
-
-Maintains ordering consistency between IDs and embeddings.
-
----
-
-## 4. Role Embeddings
-
-```text
-role_embeddings.json
-```
-
-Contains embeddings for every role in a candidate's career history.
-
-Used for:
-
-```text
-Career trajectory scoring
-Promotion analysis
-Role progression analysis
-```
-
----
-
-## 5. Candidate Features
-
-```text
-candidate_features.json
-```
-
-Contains all structured candidate metadata and integrity signals.
-
-Example:
-
-```json
-{
-  "yoe": 6.9,
-  "grad_year": 2020,
-  "earliest_job_year": 2019,
-  "total_career_months": 82,
-  "has_overlapping_dates": false,
-  "started_before_graduating": false,
-  "duration_mismatch_count": 0
-}
-```
-
----
-
-# Output Directory
-
-```text
-precomputed/
-├── candidate_embeddings.npy
-├── candidate_features.json
-├── candidate_ids.txt
-├── jd_embedding.npy
-└── role_embeddings.json
-```
-
----
-
-# Dependencies
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Main packages:
-
-```text
-numpy
-sentence-transformers
-python-docx
-json
-os
-datetime
-```
-
----
-
-# Running the Pipeline
-
-Execute:
+### Step 1 — Data Preparation
 
 ```bash
 python prepare.py
 ```
 
-Expected output:
+Generates:
 
-```text
-Loaded candidates
-JD loaded
-Built candidate blobs
-Model loaded
-JD embedding saved
-Candidate embeddings saved
-Role embeddings saved
-Candidate features saved
-Done
+* Candidate embeddings
+* Job description embeddings
+* Candidate features
+* Role-level embeddings
+* Integrity validation signals
+
+### Step 2 — Candidate Scoring
+
+```bash
+python scorer.py
 ```
+
+Computes:
+
+* Semantic fit
+* Skill authenticity
+* Career trajectory
+* Behavioral score
+* Integrity penalties
+
+### Step 3 — Candidate Ranking
+
+```bash
+python rank.py
+```
+
+Produces ranked candidate outputs and recruiter-facing insights.
 
 ---
 
-# Handoff to Person 2
+## Design Goals
 
-The following files must be provided to the scoring module:
-
-```text
-jd_embedding.npy
-candidate_embeddings.npy
-candidate_ids.txt
-role_embeddings.json
-candidate_features.json
-```
-
-These artifacts are used to compute:
-
-* Semantic Match Score
-* Coverage Score
-* Trajectory Score
-* Authenticity Score
-* Behavioral Score
-* Final Candidate Score
+* Accurate candidate-job matching
+* Explainable ranking decisions
+* Detection of misleading profiles
+* Scalable architecture for large candidate pools
+* Recruiter-friendly outputs
 
 ---
 
-# Author
+## Future Roadmap
 
-Person 1 – Data Preparation & Feature Engineering
+* Interactive recruiter dashboard
+* Advanced duplicate candidate detection
+* Candidate recommendation engine
+* Real-time ranking updates
+* Scalable vector search integration
+* Enhanced explainability and analytics
 
-Responsibilities:
+---
 
-* Data ingestion
-* Embedding generation
-* Feature extraction
-* Candidate integrity checks
-* Precomputed artifact generation
+## Challenge Context
+
+DeepMatch was developed as part of an AI-powered candidate discovery and ranking challenge focused on improving recruiter productivity through intelligent talent matching and automated candidate evaluation.
