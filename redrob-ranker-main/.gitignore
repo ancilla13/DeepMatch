@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+
+.cache/
+
+*.log
+
+.DS_Store
+
+__MACOSX/
+
+.env
+
+# Generated outputs
+precomputed/
+
+# Dataset
+dataset/
+
+# Python cache
+__pycache__/
+*.pyc
