@@ -49,8 +49,25 @@ HONEYPOT_HARD_THRESHOLD = 2  # honeypot_score >= 2 → hard zero (per spec)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
-def load_candidates_jsonl(path: str) -> dict:
-    """Load candidates.jsonl (one JSON object per line) into {candidate_id: record}."""
+def load_candidates(path: str) -> dict:
+    """Load candidates from a JSON array or JSONL (one JSON object per line) into {candidate_id: record}."""
+    candidate_map = {}
+    
+    # Try loading as a single JSON array first
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, list):
+                for record in data:
+                    cid = record.get("candidate_id")
+                    if cid is not None:
+                        candidate_map[cid] = record
+                print(f"  Loaded {len(candidate_map):,} candidates from JSON array in {path}")
+                return candidate_map
+    except Exception:
+        # Fall back to JSONL format if JSON loading fails
+        pass
+
     candidate_map = {}
     skipped = 0
     with open(path, "r", encoding="utf-8") as f:
@@ -69,7 +86,7 @@ def load_candidates_jsonl(path: str) -> dict:
                 skipped += 1
     if skipped:
         print(f"  [WARN] Skipped {skipped} malformed lines in {path}")
-    print(f"  Loaded {len(candidate_map):,} candidates from {path}")
+    print(f"  Loaded {len(candidate_map):,} candidates from JSONL in {path}")
     return candidate_map
 
 
@@ -119,7 +136,7 @@ def load_precomputed(precomputed_dir: str):
     return candidate_ids, candidate_embeddings, jd_embedding, candidate_features, role_embeddings
 
 
-def validate_csv(path: str, candidate_ids_in_dataset: set):
+def validate_csv(path: str, candidate_ids_in_dataset: set, expected_count: int = TOP_N):
     """Run all format checks from Section 2.1 / Section 10 of the spec."""
     errors = []
     with open(path, "r", encoding="utf-8") as f:
@@ -130,8 +147,8 @@ def validate_csv(path: str, candidate_ids_in_dataset: set):
     if not required_cols.issubset(set(reader.fieldnames or [])):
         errors.append(f"Missing columns. Expected: {required_cols}, got: {reader.fieldnames}")
 
-    if len(rows) != TOP_N:
-        errors.append(f"Row count is {len(rows)}, must be exactly {TOP_N}.")
+    if len(rows) != expected_count:
+        errors.append(f"Row count is {len(rows)}, must be exactly {expected_count}.")
 
     ranks_seen = set()
     ids_seen = set()
@@ -178,7 +195,7 @@ def validate_csv(path: str, candidate_ids_in_dataset: set):
         if not reasoning or len(reasoning.strip()) < 10:
             errors.append(f"Row {i+1} (rank {rank}): reasoning is empty or too short.")
 
-    expected_ranks = set(range(1, TOP_N + 1))
+    expected_ranks = set(range(1, expected_count + 1))
     missing_ranks = expected_ranks - ranks_seen
     if missing_ranks:
         errors.append(f"Missing ranks: {sorted(missing_ranks)[:10]} ...")
@@ -216,7 +233,7 @@ def main():
     ) = load_precomputed(args.precomputed)
 
     print("\n[2/6] Loading raw candidate profiles ...")
-    candidate_map = load_candidates_jsonl(args.candidates)
+    candidate_map = load_candidates(args.candidates)
 
     # Warn if any precomputed ID is not in the raw dataset
     missing_in_raw = [cid for cid in candidate_ids if cid not in candidate_map]
@@ -390,10 +407,11 @@ def main():
         print(f"  [WARN] Only {len(top_candidates)} eligible candidates found "
               f"(need {TOP_N}). Check disqualification logic.")
 
-    # ── Step 5: Write submission CSV ──────────────────────────────────────────
-    print(f"\n[6/6] Writing {args.out} ...")
+    # ── Step 5: Write outputs (CSV and JSON) ──────────────────────────────────
+    print(f"\n[6/6] Writing outputs to {args.out} ...")
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
 
+    # 1. Write submission CSV
     with open(args.out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["candidate_id", "rank", "score", "reasoning"])
         writer.writeheader()
@@ -405,16 +423,47 @@ def main():
                 "reasoning": record["reasoning"],
             })
 
+    # 2. Write enriched ranked_candidates.json for the Streamlit dashboard
+    json_results = []
+    # Sort all results: eligible (by final_score desc) followed by disqualified/honeypots
+    sorted_all_results = sorted(results, key=lambda x: (-x["final_score"], x["is_disqualified"], x["honeypot_flags"], x["candidate_id"]))
+    
+    for r in sorted_all_results:
+        cid = r["candidate_id"]
+        raw_cand = candidate_map.get(cid, {})
+        profile = raw_cand.get("profile", {})
+        
+        json_results.append({
+            "candidate_id": cid,
+            "name": profile.get("anonymized_name", cid),
+            "final_score": r["final_score"],
+            "reasoning": r["reasoning"],
+            "is_disqualified": r["is_disqualified"],
+            "honeypot_flags": r["honeypot_flags"],
+            "breakdown": r.get("_breakdown", {}),
+            "profile": {
+                "current_title": profile.get("current_title", "—"),
+                "current_company": profile.get("current_company", "—"),
+                "years_of_experience": profile.get("years_of_experience", 0.0),
+            },
+            "yoe": profile.get("years_of_experience", 0.0),
+        })
+        
+    json_out_path = os.path.join(os.path.dirname(os.path.abspath(args.out)), "ranked_candidates.json")
+    with open(json_out_path, "w", encoding="utf-8") as f:
+        json.dump(json_results, f, indent=2)
+    print(f"  Saved enriched JSON dashboard data to: {json_out_path}")
+
     # ── Format validation (built-in) ──────────────────────────────────────────
     print("\n  Running format validation ...")
-    errors = validate_csv(args.out, set(candidate_map.keys()))
+    errors = validate_csv(args.out, set(candidate_map.keys()), expected_count=len(top_candidates))
     if errors:
         print(f"\n  [FAIL] {len(errors)} validation error(s):")
         for err in errors:
-            print(f"    ✗ {err}")
+            print(f"    - {err}")
         sys.exit(1)
     else:
-        print("  ✓ All format checks passed (100 rows, ranks 1–100, "
+        print("  [PASS] All format checks passed (100 rows, ranks 1-100, "
               "non-increasing scores, no duplicates)")
 
     # ── Final timing summary ──────────────────────────────────────────────────
@@ -422,7 +471,7 @@ def main():
     print("\n" + "="*60)
     print(f"  Done. Output: {args.out}")
     print(f"  Total wall-clock time : {wall_elapsed:.1f}s "
-          f"({'✓ within 5-min limit' if wall_elapsed < 300 else '✗ EXCEEDS 5-min limit!'})")
+          f"({'[PASS] within 5-min limit' if wall_elapsed < 300 else '[FAIL] EXCEEDS 5-min limit!'})")
     print(f"  Top score : {top_candidates[0]['final_score'] if top_candidates else 'N/A'}")
     print(f"  Rank-100 score: {top_candidates[-1]['final_score'] if len(top_candidates) >= 100 else 'N/A'}")
     print("="*60 + "\n")
