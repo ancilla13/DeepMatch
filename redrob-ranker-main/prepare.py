@@ -241,7 +241,8 @@ print("Built candidate blobs")
 print("Loading MiniLM model...")
 
 model = SentenceTransformer(
-    "all-MiniLM-L6-v2"
+    "all-MiniLM-L6-v2",
+    device="cpu"
 )
 
 print("Model loaded")
