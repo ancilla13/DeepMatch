@@ -203,49 +203,25 @@ def validate_csv(path: str, candidate_ids_in_dataset: set, expected_count: int =
     return errors
 
 
-# ── Main pipeline ─────────────────────────────────────────────────────────────
+# ── Core Ranking Function for API/Library Use ───────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(description="Redrob Candidate Ranker")
-    parser.add_argument("--candidates", required=True,
-                        help="Path to candidates.jsonl (100K profiles)")
-    parser.add_argument("--out", required=True,
-                        help="Output CSV path (e.g. submission.csv)")
-    parser.add_argument("--precomputed", default=PRECOMPUTED_DIR,
-                        help="Precomputed artifacts directory (default: precomputed/)")
-    parser.add_argument("--top", type=int, default=TOP_N,
-                        help="Number of candidates to output (default: 100)")
-    args = parser.parse_args()
-
-    wall_start = time.time()
-    print("\n" + "="*60)
-    print("  Redrob Candidate Ranker — rank.py")
-    print("="*60)
-
-    # ── Step 1: Load everything ───────────────────────────────────────────────
-    print("\n[1/6] Loading precomputed artifacts ...")
-    (
-        candidate_ids,
-        candidate_embeddings,
-        jd_embedding,
-        candidate_features,
-        role_embeddings,
-    ) = load_precomputed(args.precomputed)
-
-    print("\n[2/6] Loading raw candidate profiles ...")
-    candidate_map = load_candidates(args.candidates)
-
-    # Warn if any precomputed ID is not in the raw dataset
-    missing_in_raw = [cid for cid in candidate_ids if cid not in candidate_map]
-    if missing_in_raw:
-        print(f"  [WARN] {len(missing_in_raw)} precomputed IDs not found in "
-              f"{args.candidates}. They will be skipped.")
-
-    # ── Step 2: Duplicate / behavioral-twin detection (once, across all) ─────
-    print("\n[3/6] Running duplicate/twin detection ...")
-    t0 = time.time()
-
-    # Pre-compute behavioral scores for duplicate resolution
+def run_ranking_pipeline(
+    candidate_ids,
+    candidate_embeddings,
+    jd_embedding,
+    candidate_features,
+    role_embeddings,
+    candidate_map,
+    top_n=TOP_N,
+    yoe_filter=0,
+    open_to_work_filter=False,
+    skills_filter=None
+):
+    """
+    Core engine logic separated from I/O so it can be called in-memory.
+    Supports basic filters before scoring to test "upload + filter" workflow.
+    """
+    # 1. Twin / duplicate detection
     behavioral_scores_list = []
     for cid in candidate_ids:
         features = candidate_features.get(cid, {})
@@ -259,12 +235,6 @@ def main():
         behavioral_scores=behavioral_scores_list,
         threshold=DUPLICATE_THRESHOLD,
     )
-    print(f"  Flagged {len(duplicate_ids):,} duplicate/twin profiles "
-          f"({time.time()-t0:.1f}s)")
-
-    # ── Step 3: Score every candidate ─────────────────────────────────────────
-    print("\n[4/6] Scoring all candidates ...")
-    t0 = time.time()
 
     results = []
     disq_count = 0
@@ -272,7 +242,7 @@ def main():
     skipped_count = 0
 
     for i, cid in enumerate(candidate_ids):
-        # Skip duplicates (the better twin was already kept by flag_duplicates)
+        # Skip duplicates
         if cid in duplicate_ids:
             skipped_count += 1
             continue
@@ -286,6 +256,27 @@ def main():
         features = candidate_features.get(cid, {})
         cand_emb = candidate_embeddings[i]
 
+        # Apply basic pre-filters if requested
+        if yoe_filter > 0:
+            yoe = raw_cand.get("profile", {}).get("years_of_experience", 0.0)
+            if yoe < yoe_filter:
+                skipped_count += 1
+                continue
+                
+        if open_to_work_filter:
+            # Check open to work status in signals
+            signals = features.get("redrob_signals", {})
+            if not signals.get("open_to_work_flag", False):
+                skipped_count += 1
+                continue
+
+        if skills_filter:
+            cand_skills = {s.get("name", "").lower() for s in raw_cand.get("skills", [])}
+            missing = [s for s in skills_filter if s.lower() not in cand_skills]
+            if missing:
+                skipped_count += 1
+                continue
+
         # ── Gate 1: Hard disqualification ────────────────────────────────────
         disq = is_disqualified(raw_cand, features)
         if disq:
@@ -296,6 +287,14 @@ def main():
                 "reasoning": "",
                 "is_disqualified": True,
                 "honeypot_flags": 0,
+                "breakdown": {
+                    "final": 0.0,
+                    "semantic_fit": 0.0,
+                    "coverage": 0.0,
+                    "trajectory": 0.0,
+                    "authenticity": 0.0,
+                    "behavioral": 0.0
+                }
             })
             continue
 
@@ -309,6 +308,14 @@ def main():
                 "reasoning": "",
                 "is_disqualified": False,
                 "honeypot_flags": h_score,
+                "breakdown": {
+                    "final": 0.0,
+                    "semantic_fit": 0.0,
+                    "coverage": 0.0,
+                    "trajectory": 0.0,
+                    "authenticity": 0.0,
+                    "behavioral": 0.0
+                }
             })
             continue
 
@@ -370,30 +377,77 @@ def main():
             "reasoning": reasoning,
             "is_disqualified": False,
             "honeypot_flags": h_score,
-            "_breakdown": scores_dict,   # for honeypot-rate self-check only
+            "breakdown": scores_dict,
         })
 
-        # Progress heartbeat every 10K candidates
-        if (i + 1) % 10_000 == 0:
-            elapsed = time.time() - t0
-            print(f"  ... {i+1:,} / {len(candidate_ids):,} scored "
-                  f"({elapsed:.0f}s elapsed)")
-
-    elapsed_scoring = time.time() - t0
-    print(f"  Scoring complete: {len(results):,} candidates processed "
-          f"in {elapsed_scoring:.1f}s")
-    print(f"  Disqualified : {disq_count:,}")
-    print(f"  Honeypots    : {honeypot_count:,}")
-    print(f"  Twins skipped: {skipped_count:,}")
-
-    # ── Step 4: Sort → top 100 ────────────────────────────────────────────────
-    print("\n[5/6] Sorting and selecting top 100 ...")
-
+    # Sort results
     # Primary sort: final_score descending; tie-break: candidate_id ascending
     eligible = [r for r in results if not r["is_disqualified"] and r["honeypot_flags"] < HONEYPOT_HARD_THRESHOLD]
     eligible.sort(key=lambda x: (-x["final_score"], x["candidate_id"]))
 
-    top_candidates = eligible[:args.top]
+    top_candidates = eligible[:top_n]
+    
+    # Sort all results for dashboard display
+    sorted_all_results = sorted(results, key=lambda x: (-x["final_score"], x["is_disqualified"], x["honeypot_flags"], x["candidate_id"]))
+
+    return top_candidates, sorted_all_results, duplicate_ids, disq_count, honeypot_count, skipped_count
+
+
+# ── Main CLI ─────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Redrob Candidate Ranker")
+    parser.add_argument("--candidates", required=True,
+                        help="Path to candidates.jsonl (100K profiles)")
+    parser.add_argument("--out", required=True,
+                        help="Output CSV path (e.g. submission.csv)")
+    parser.add_argument("--precomputed", default=PRECOMPUTED_DIR,
+                        help="Precomputed artifacts directory (default: precomputed/)")
+    parser.add_argument("--top", type=int, default=TOP_N,
+                        help="Number of candidates to output (default: 100)")
+    args = parser.parse_args()
+
+    wall_start = time.time()
+    print("\n" + "="*60)
+    print("  Redrob Candidate Ranker — rank.py")
+    print("="*60)
+
+    # ── Step 1: Load everything ───────────────────────────────────────────────
+    print("\n[1/6] Loading precomputed artifacts ...")
+    (
+        candidate_ids,
+        candidate_embeddings,
+        jd_embedding,
+        candidate_features,
+        role_embeddings,
+    ) = load_precomputed(args.precomputed)
+
+    print("\n[2/6] Loading raw candidate profiles ...")
+    candidate_map = load_candidates(args.candidates)
+
+    # Warn if any precomputed ID is not in the raw dataset
+    missing_in_raw = [cid for cid in candidate_ids if cid not in candidate_map]
+    if missing_in_raw:
+        print(f"  [WARN] {len(missing_in_raw)} precomputed IDs not found in "
+              f"{args.candidates}. They will be skipped.")
+
+    # ── Step 2-4: Run Ranking ─────────────────────────────────────────────────
+    print("\n[3/6] Running ranking pipeline ...")
+    t0 = time.time()
+    top_candidates, sorted_all_results, duplicate_ids, disq_count, honeypot_count, skipped_count = run_ranking_pipeline(
+        candidate_ids,
+        candidate_embeddings,
+        jd_embedding,
+        candidate_features,
+        role_embeddings,
+        candidate_map,
+        top_n=args.top
+    )
+    elapsed_scoring = time.time() - t0
+    print(f"  Scoring complete in {elapsed_scoring:.1f}s")
+    print(f"  Disqualified : {disq_count:,}")
+    print(f"  Honeypots    : {honeypot_count:,}")
+    print(f"  Twins skipped: {len(duplicate_ids):,}")
 
     # ── Honeypot rate self-check ──────────────────────────────────────────────
     honeypot_in_top = sum(1 for r in top_candidates if r["honeypot_flags"] >= 1)
@@ -403,9 +457,9 @@ def main():
     if honeypot_rate > 0.10:
         print("  [WARN] Honeypot rate > 10% — re-tune scoring weights before submitting!")
 
-    if len(top_candidates) < TOP_N:
+    if len(top_candidates) < args.top:
         print(f"  [WARN] Only {len(top_candidates)} eligible candidates found "
-              f"(need {TOP_N}). Check disqualification logic.")
+              f"(need {args.top}). Check disqualification logic.")
 
     # ── Step 5: Write outputs (CSV and JSON) ──────────────────────────────────
     print(f"\n[6/6] Writing outputs to {args.out} ...")
@@ -423,12 +477,9 @@ def main():
                 "reasoning": record["reasoning"],
             })
 
-    # 2. Write enriched ranked_candidates.json for the Streamlit dashboard
+    # 2. Write enriched ranked_candidates.json for the dashboard
     json_results = []
-    # Sort all results: eligible (by final_score desc) followed by disqualified/honeypots
-    sorted_all_results = sorted(results, key=lambda x: (-x["final_score"], x["is_disqualified"], x["honeypot_flags"], x["candidate_id"]))
-    
-    for r in sorted_all_results:
+    for r in top_candidates:
         cid = r["candidate_id"]
         raw_cand = candidate_map.get(cid, {})
         profile = raw_cand.get("profile", {})
@@ -440,7 +491,7 @@ def main():
             "reasoning": r["reasoning"],
             "is_disqualified": r["is_disqualified"],
             "honeypot_flags": r["honeypot_flags"],
-            "breakdown": r.get("_breakdown", {}),
+            "breakdown": r.get("breakdown", {}),
             "profile": {
                 "current_title": profile.get("current_title", "—"),
                 "current_company": profile.get("current_company", "—"),
@@ -477,10 +528,6 @@ def main():
     print("="*60 + "\n")
 
     if wall_elapsed >= 300:
-        print("[PERF] Exceeded 5-minute budget. Profile the bottleneck:")
-        print("       Most likely: flag_duplicates matrix multiply at 100K scale.")
-        print("       Fix: reduce chunk size in flag_duplicates, or pre-filter "
-              "disqualified candidates before the duplicate pass.\n")
         sys.exit(1)
 
 
