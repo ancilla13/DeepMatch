@@ -1,0 +1,2202 @@
+[
+  {
+    "candidate_id": "CAND_0046064",
+    "name": "Saanvi Naidu",
+    "final_score": 0.7051,
+    "reasoning": "Candidate brings 8.9 years of experience and currently serves as Senior NLP Engineer at Salesforce. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Python, Image Classification, OpenCV; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, supporting a strong match for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.7051,
+      "semantic_fit": 0.5916882753372192,
+      "coverage": 1.0,
+      "trajectory": 0.36028823126917303,
+      "authenticity": 0.6727704326215416,
+      "behavioral": 0.8632500000000001
+    },
+    "profile": {
+      "current_title": "Senior NLP Engineer",
+      "current_company": "Salesforce",
+      "years_of_experience": 8.9
+    },
+    "yoe": 8.9
+  },
+  {
+    "candidate_id": "CAND_0018499",
+    "name": "Aarav Trivedi",
+    "final_score": 0.7004,
+    "reasoning": "Candidate brings 7.2 years of experience and currently serves as Senior Machine Learning Engineer at Zomato. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Deep Learning, Weaviate, Recommendation Systems; actively open to new opportunities; a verified contact profile, supporting a strong match for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.7004,
+      "semantic_fit": 0.5491113662719727,
+      "coverage": 1.0,
+      "trajectory": 0.3869695430216582,
+      "authenticity": 0.6544905621558219,
+      "behavioral": 0.8970000000000001
+    },
+    "profile": {
+      "current_title": "Senior Machine Learning Engineer",
+      "current_company": "Zomato",
+      "years_of_experience": 7.2
+    },
+    "yoe": 7.2
+  },
+  {
+    "candidate_id": "CAND_0002025",
+    "name": "Ira Dalal",
+    "final_score": 0.6958,
+    "reasoning": "Candidate brings 5.9 years of experience and currently serves as Senior AI Engineer at Apple. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Diffusion Models, FAISS, TensorFlow; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6958,
+      "semantic_fit": 0.5563204288482666,
+      "coverage": 1.0,
+      "trajectory": 0.3450597756438785,
+      "authenticity": 0.6645537008669297,
+      "behavioral": 0.8872500000000001
+    },
+    "profile": {
+      "current_title": "Senior AI Engineer",
+      "current_company": "Apple",
+      "years_of_experience": 5.9
+    },
+    "yoe": 5.9
+  },
+  {
+    "candidate_id": "CAND_0088025",
+    "name": "Amit Arora",
+    "final_score": 0.6942,
+    "reasoning": "Candidate brings 8.6 years of experience and currently serves as Staff Machine Learning Engineer at Yellow.ai. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Pinecone, QLoRA, LLMs; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6942,
+      "semantic_fit": 0.5464451313018799,
+      "coverage": 1.0,
+      "trajectory": 0.31740998055623926,
+      "authenticity": 0.657934705789445,
+      "behavioral": 0.9198333333333334
+    },
+    "profile": {
+      "current_title": "Staff Machine Learning Engineer",
+      "current_company": "Yellow.ai",
+      "years_of_experience": 8.6
+    },
+    "yoe": 8.6
+  },
+  {
+    "candidate_id": "CAND_0039754",
+    "name": "Mira Banerjee",
+    "final_score": 0.6934,
+    "reasoning": "Candidate brings 16.2 years of experience and currently serves as Senior Applied Scientist at Meta. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Fine-tuning LLMs, LlamaIndex, Qdrant; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 1,
+    "breakdown": {
+      "final": 0.6934,
+      "semantic_fit": 0.5780988931655884,
+      "coverage": 1.0,
+      "trajectory": 0.30629337352255115,
+      "authenticity": 0.6481872167392385,
+      "behavioral": 0.8837499999999999
+    },
+    "profile": {
+      "current_title": "Senior Applied Scientist",
+      "current_company": "Meta",
+      "years_of_experience": 16.2
+    },
+    "yoe": 16.2
+  },
+  {
+    "candidate_id": "CAND_0046703",
+    "name": "Aarav Vora",
+    "final_score": 0.6919,
+    "reasoning": "Candidate brings 4.5 years of experience and currently serves as Senior Software Engineer at Cognizant. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Data Science, Go, Kafka; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6919,
+      "semantic_fit": 0.5478682518005371,
+      "coverage": 1.0,
+      "trajectory": 0.3870286954485852,
+      "authenticity": 0.6276382389606222,
+      "behavioral": 0.8769166666666667
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer",
+      "current_company": "Cognizant",
+      "years_of_experience": 4.5
+    },
+    "yoe": 4.5
+  },
+  {
+    "candidate_id": "CAND_0055905",
+    "name": "Anika Rao",
+    "final_score": 0.6858,
+    "reasoning": "Candidate brings 8.1 years of experience and currently serves as Senior Machine Learning Engineer at Flipkart. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Elasticsearch, ASR, Hugging Face Transformers; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6858,
+      "semantic_fit": 0.5630788803100586,
+      "coverage": 1.0,
+      "trajectory": 0.33753919860591064,
+      "authenticity": 0.6592138320368786,
+      "behavioral": 0.8366666666666667
+    },
+    "profile": {
+      "current_title": "Senior Machine Learning Engineer",
+      "current_company": "Flipkart",
+      "years_of_experience": 8.1
+    },
+    "yoe": 8.1
+  },
+  {
+    "candidate_id": "CAND_0094759",
+    "name": "Aditya Pillai",
+    "final_score": 0.6854,
+    "reasoning": "Candidate brings 8.6 years of experience and currently serves as Lead AI Engineer at Meta. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Prompt Engineering, scikit-learn, Hugging Face Transformers; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6854,
+      "semantic_fit": 0.5997878313064575,
+      "coverage": 1.0,
+      "trajectory": 0.4254944855752199,
+      "authenticity": 0.6325439048144972,
+      "behavioral": 0.7338333333333333
+    },
+    "profile": {
+      "current_title": "Lead AI Engineer",
+      "current_company": "Meta",
+      "years_of_experience": 8.6
+    },
+    "yoe": 8.6
+  },
+  {
+    "candidate_id": "CAND_0081846",
+    "name": "Arjun Khanna",
+    "final_score": 0.685,
+    "reasoning": "Candidate brings 6.7 years of experience and currently serves as Lead AI Engineer at Razorpay. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Data Science, Information Retrieval, LlamaIndex; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.685,
+      "semantic_fit": 0.573944091796875,
+      "coverage": 1.0,
+      "trajectory": 0.3647447129090627,
+      "authenticity": 0.6516464525140189,
+      "behavioral": 0.8017500000000001
+    },
+    "profile": {
+      "current_title": "Lead AI Engineer",
+      "current_company": "Razorpay",
+      "years_of_experience": 6.7
+    },
+    "yoe": 6.7
+  },
+  {
+    "candidate_id": "CAND_0011687",
+    "name": "Shreya Tiwari",
+    "final_score": 0.6822,
+    "reasoning": "Candidate brings 7.8 years of experience and currently serves as Senior NLP Engineer at Niramai. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in TensorFlow, OpenSearch, FAISS; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6822,
+      "semantic_fit": 0.5418609380722046,
+      "coverage": 1.0,
+      "trajectory": 0.3007352352142334,
+      "authenticity": 0.6734775865999426,
+      "behavioral": 0.8674166666666667
+    },
+    "profile": {
+      "current_title": "Senior NLP Engineer",
+      "current_company": "Niramai",
+      "years_of_experience": 7.8
+    },
+    "yoe": 7.8
+  },
+  {
+    "candidate_id": "CAND_0046525",
+    "name": "Tanvi Mukherjee",
+    "final_score": 0.6817,
+    "reasoning": "Candidate brings 6.1 years of experience and currently serves as Senior Machine Learning Engineer at Genpact AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Elasticsearch, Redux, LangChain; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6817,
+      "semantic_fit": 0.5746100544929504,
+      "coverage": 1.0,
+      "trajectory": 0.42194545931286276,
+      "authenticity": 0.6356354770040596,
+      "behavioral": 0.7534166666666666
+    },
+    "profile": {
+      "current_title": "Senior Machine Learning Engineer",
+      "current_company": "Genpact AI",
+      "years_of_experience": 6.1
+    },
+    "yoe": 6.1
+  },
+  {
+    "candidate_id": "CAND_0086022",
+    "name": "Dhruv Naidu",
+    "final_score": 0.6808,
+    "reasoning": "Candidate brings 5.3 years of experience and currently serves as Senior Applied Scientist at Sarvam AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Vector Search, MLflow, Recommendation Systems; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6808,
+      "semantic_fit": 0.5560638904571533,
+      "coverage": 1.0,
+      "trajectory": 0.4120244516266717,
+      "authenticity": 0.6394132414894811,
+      "behavioral": 0.7813333333333334
+    },
+    "profile": {
+      "current_title": "Senior Applied Scientist",
+      "current_company": "Sarvam AI",
+      "years_of_experience": 5.3
+    },
+    "yoe": 5.3
+  },
+  {
+    "candidate_id": "CAND_0059504",
+    "name": "Aarohi Singh",
+    "final_score": 0.6746,
+    "reasoning": "Candidate brings 3.3 years of experience and currently serves as Junior ML Engineer at Wipro. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Vector Search, Machine Learning, CNN; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6746,
+      "semantic_fit": 0.5225896835327148,
+      "coverage": 1.0,
+      "trajectory": 0.42075294256210327,
+      "authenticity": 0.6037895555736992,
+      "behavioral": 0.8209166666666666
+    },
+    "profile": {
+      "current_title": "Junior ML Engineer",
+      "current_company": "Wipro",
+      "years_of_experience": 3.3
+    },
+    "yoe": 3.3
+  },
+  {
+    "candidate_id": "CAND_0008425",
+    "name": "Myra Krishnan",
+    "final_score": 0.6712,
+    "reasoning": "Candidate brings 7.8 years of experience and currently serves as Senior NLP Engineer at Ola. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Learning to Rank, Qdrant, Weights & Biases; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6712,
+      "semantic_fit": 0.6028299331665039,
+      "coverage": 1.0,
+      "trajectory": 0.2982701879480611,
+      "authenticity": 0.6507790547034178,
+      "behavioral": 0.7399166666666667
+    },
+    "profile": {
+      "current_title": "Senior NLP Engineer",
+      "current_company": "Ola",
+      "years_of_experience": 7.8
+    },
+    "yoe": 7.8
+  },
+  {
+    "candidate_id": "CAND_0065195",
+    "name": "Kiara Mukherjee",
+    "final_score": 0.6639,
+    "reasoning": "Candidate brings 5.1 years of experience and currently serves as Search Engineer at CRED. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in LLMs, BentoML, QLoRA; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6639,
+      "semantic_fit": 0.48293501138687134,
+      "coverage": 1.0,
+      "trajectory": 0.30078677005238,
+      "authenticity": 0.6597176720889993,
+      "behavioral": 0.8749166666666668
+    },
+    "profile": {
+      "current_title": "Search Engineer",
+      "current_company": "CRED",
+      "years_of_experience": 5.1
+    },
+    "yoe": 5.1
+  },
+  {
+    "candidate_id": "CAND_0030641",
+    "name": "Rajesh Arora",
+    "final_score": 0.6635,
+    "reasoning": "Candidate brings 5.0 years of experience and currently serves as Senior Data Engineer at TCS. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Diffusion Models, Angular, QLoRA; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6635,
+      "semantic_fit": 0.492000937461853,
+      "coverage": 1.0,
+      "trajectory": 0.3626035783025954,
+      "authenticity": 0.6023049392832597,
+      "behavioral": 0.85575
+    },
+    "profile": {
+      "current_title": "Senior Data Engineer",
+      "current_company": "TCS",
+      "years_of_experience": 5.0
+    },
+    "yoe": 5.0
+  },
+  {
+    "candidate_id": "CAND_0028246",
+    "name": "Divya Mehta",
+    "final_score": 0.6632,
+    "reasoning": "Candidate brings 5.1 years of experience and currently serves as Java Developer at Mindtree. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Statistical Modeling, Sentence Transformers, Apache Flink; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6632,
+      "semantic_fit": 0.5059300065040588,
+      "coverage": 1.0,
+      "trajectory": 0.33783099184865545,
+      "authenticity": 0.6124918044343369,
+      "behavioral": 0.8441666666666667
+    },
+    "profile": {
+      "current_title": "Java Developer",
+      "current_company": "Mindtree",
+      "years_of_experience": 5.1
+    },
+    "yoe": 5.1
+  },
+  {
+    "candidate_id": "CAND_0029117",
+    "name": "Nisha Mittal",
+    "final_score": 0.6615,
+    "reasoning": "Candidate brings 5.6 years of experience and currently serves as Senior Software Engineer (ML) at Freshworks. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in OpenCV, CNN, Object Detection; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6615,
+      "semantic_fit": 0.49244219064712524,
+      "coverage": 1.0,
+      "trajectory": 0.3673811062522557,
+      "authenticity": 0.6212839375014099,
+      "behavioral": 0.8275
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Freshworks",
+      "years_of_experience": 5.6
+    },
+    "yoe": 5.6
+  },
+  {
+    "candidate_id": "CAND_0015581",
+    "name": "Tanvi Reddy",
+    "final_score": 0.6599,
+    "reasoning": "Candidate brings 6.0 years of experience and currently serves as Senior Software Engineer (ML) at Niramai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Python, gRPC, TTS; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6599,
+      "semantic_fit": 0.4793245792388916,
+      "coverage": 1.0,
+      "trajectory": 0.4658834182697794,
+      "authenticity": 0.6247722425137845,
+      "behavioral": 0.7625
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Niramai",
+      "years_of_experience": 6.0
+    },
+    "yoe": 6.0
+  },
+  {
+    "candidate_id": "CAND_0034164",
+    "name": "Aisha Sethi",
+    "final_score": 0.6598,
+    "reasoning": "Candidate brings 3.6 years of experience and currently serves as Data Scientist at Haptik. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in ASR, Computer Vision, Data Science; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6598,
+      "semantic_fit": 0.4830372929573059,
+      "coverage": 1.0,
+      "trajectory": 0.37834572273751965,
+      "authenticity": 0.613998215410367,
+      "behavioral": 0.8300000000000001
+    },
+    "profile": {
+      "current_title": "Data Scientist",
+      "current_company": "Haptik",
+      "years_of_experience": 3.6
+    },
+    "yoe": 3.6
+  },
+  {
+    "candidate_id": "CAND_0055362",
+    "name": "Karan Khanna",
+    "final_score": 0.6562,
+    "reasoning": "Candidate brings 3.1 years of experience and currently serves as Senior Software Engineer (ML) at HCL. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in MLflow, OpenSearch, Pinecone; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6562,
+      "semantic_fit": 0.49966663122177124,
+      "coverage": 1.0,
+      "trajectory": 0.42601749300956726,
+      "authenticity": 0.6347456182829995,
+      "behavioral": 0.7361666666666666
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "HCL",
+      "years_of_experience": 3.1
+    },
+    "yoe": 3.1
+  },
+  {
+    "candidate_id": "CAND_0093912",
+    "name": "Advik Sethi",
+    "final_score": 0.6561,
+    "reasoning": "Candidate brings 5.3 years of experience and currently serves as Senior Data Scientist at Razorpay. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Feature Engineering, SAP, CNN; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6561,
+      "semantic_fit": 0.46907341480255127,
+      "coverage": 1.0,
+      "trajectory": 0.24853112904921823,
+      "authenticity": 0.6422690403293173,
+      "behavioral": 0.9087500000000001
+    },
+    "profile": {
+      "current_title": "Senior Data Scientist",
+      "current_company": "Razorpay",
+      "years_of_experience": 5.3
+    },
+    "yoe": 5.3
+  },
+  {
+    "candidate_id": "CAND_0046353",
+    "name": "Sneha Tiwari",
+    "final_score": 0.6553,
+    "reasoning": "Candidate brings 6.4 years of experience and currently serves as ML Engineer at Razorpay. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in MLflow, SAP, GANs; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6553,
+      "semantic_fit": 0.5227847099304199,
+      "coverage": 1.0,
+      "trajectory": 0.28961044355579046,
+      "authenticity": 0.6310682307389968,
+      "behavioral": 0.8017500000000001
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "Razorpay",
+      "years_of_experience": 6.4
+    },
+    "yoe": 6.4
+  },
+  {
+    "candidate_id": "CAND_0009232",
+    "name": "Sai Dutta",
+    "final_score": 0.6529,
+    "reasoning": "Candidate brings 4.0 years of experience and currently serves as Senior Software Engineer at Tech Mahindra. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in MongoDB, Weaviate, Kubeflow; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6529,
+      "semantic_fit": 0.48836272954940796,
+      "coverage": 1.0,
+      "trajectory": 0.40458132823308307,
+      "authenticity": 0.6023515536163857,
+      "behavioral": 0.7766666666666668
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer",
+      "current_company": "Tech Mahindra",
+      "years_of_experience": 4.0
+    },
+    "yoe": 4.0
+  },
+  {
+    "candidate_id": "CAND_0060072",
+    "name": "Anil Mishra",
+    "final_score": 0.6506,
+    "reasoning": "Candidate brings 5.7 years of experience and currently serves as Staff Machine Learning Engineer at Amazon. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Deep Learning, Sentence Transformers, PyTorch; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6506,
+      "semantic_fit": 0.570716381072998,
+      "coverage": 1.0,
+      "trajectory": 0.2596787148051792,
+      "authenticity": 0.6501424605630148,
+      "behavioral": 0.7143333333333333
+    },
+    "profile": {
+      "current_title": "Staff Machine Learning Engineer",
+      "current_company": "Amazon",
+      "years_of_experience": 5.7
+    },
+    "yoe": 5.7
+  },
+  {
+    "candidate_id": "CAND_0071974",
+    "name": "Sai Verma",
+    "final_score": 0.6501,
+    "reasoning": "Candidate brings 7.8 years of experience and currently serves as Senior AI Engineer at Netflix. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in LoRA, Learning to Rank, Weaviate; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6501,
+      "semantic_fit": 0.5725150108337402,
+      "coverage": 0.75,
+      "trajectory": 0.3250432714172032,
+      "authenticity": 0.6513344080042346,
+      "behavioral": 0.9095
+    },
+    "profile": {
+      "current_title": "Senior AI Engineer",
+      "current_company": "Netflix",
+      "years_of_experience": 7.8
+    },
+    "yoe": 7.8
+  },
+  {
+    "candidate_id": "CAND_0050876",
+    "name": "Vivaan Shah",
+    "final_score": 0.6494,
+    "reasoning": "Candidate brings 6.0 years of experience and currently serves as Applied ML Engineer at Freshworks. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in SQL, Qdrant, MLOps; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6494,
+      "semantic_fit": 0.43777158856391907,
+      "coverage": 1.0,
+      "trajectory": 0.2725597995778789,
+      "authenticity": 0.6254284891330786,
+      "behavioral": 0.9169166666666666
+    },
+    "profile": {
+      "current_title": "Applied ML Engineer",
+      "current_company": "Freshworks",
+      "years_of_experience": 6.0
+    },
+    "yoe": 6.0
+  },
+  {
+    "candidate_id": "CAND_0073204",
+    "name": "Naina Agarwal",
+    "final_score": 0.648,
+    "reasoning": "Candidate brings 3.4 years of experience and currently serves as Senior Software Engineer (ML) at Swiggy. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in MLflow, Time Series, Diffusion Models; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.648,
+      "semantic_fit": 0.482724666595459,
+      "coverage": 1.0,
+      "trajectory": 0.24315327405929565,
+      "authenticity": 0.6277543887388677,
+      "behavioral": 0.8625
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Swiggy",
+      "years_of_experience": 3.4
+    },
+    "yoe": 3.4
+  },
+  {
+    "candidate_id": "CAND_0025923",
+    "name": "Tanya Chatterjee",
+    "final_score": 0.646,
+    "reasoning": "Candidate brings 5.0 years of experience and currently serves as Senior Software Engineer (ML) at HCL. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in TTS, Reinforcement Learning, Speech Recognition; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.646,
+      "semantic_fit": 0.4925849139690399,
+      "coverage": 1.0,
+      "trajectory": 0.38223728868696427,
+      "authenticity": 0.6373292742057973,
+      "behavioral": 0.7266666666666668
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "HCL",
+      "years_of_experience": 5.0
+    },
+    "yoe": 5.0
+  },
+  {
+    "candidate_id": "CAND_0028422",
+    "name": "Rahul Sharma",
+    "final_score": 0.6459,
+    "reasoning": "Candidate brings 5.5 years of experience and currently serves as Junior ML Engineer at Yellow.ai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Pinecone, Deep Learning, pgvector; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6459,
+      "semantic_fit": 0.46735048294067383,
+      "coverage": 1.0,
+      "trajectory": 0.32020972345186316,
+      "authenticity": 0.6218328392620216,
+      "behavioral": 0.8220833333333334
+    },
+    "profile": {
+      "current_title": "Junior ML Engineer",
+      "current_company": "Yellow.ai",
+      "years_of_experience": 5.5
+    },
+    "yoe": 5.5
+  },
+  {
+    "candidate_id": "CAND_0077067",
+    "name": "Vihaan Malhotra",
+    "final_score": 0.6454,
+    "reasoning": "Candidate brings 5.4 years of experience and currently serves as AI Specialist at PolicyBazaar. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Statistical Modeling, Image Classification, Python; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6454,
+      "semantic_fit": 0.5106337666511536,
+      "coverage": 1.0,
+      "trajectory": 0.3466155710427658,
+      "authenticity": 0.622217016611161,
+      "behavioral": 0.7345000000000002
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "PolicyBazaar",
+      "years_of_experience": 5.4
+    },
+    "yoe": 5.4
+  },
+  {
+    "candidate_id": "CAND_0072229",
+    "name": "Ayaan Menon",
+    "final_score": 0.644,
+    "reasoning": "Candidate brings 6.0 years of experience and currently serves as Senior Software Engineer at Cognizant. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Machine Learning, Apache Beam, Time Series; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.644,
+      "semantic_fit": 0.545768678188324,
+      "coverage": 0.75,
+      "trajectory": 0.45877976218859357,
+      "authenticity": 0.6094693971217224,
+      "behavioral": 0.8500000000000001
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer",
+      "current_company": "Cognizant",
+      "years_of_experience": 6.0
+    },
+    "yoe": 6.0
+  },
+  {
+    "candidate_id": "CAND_0018722",
+    "name": "Pranav Trivedi",
+    "final_score": 0.642,
+    "reasoning": "Candidate brings 6.6 years of experience and currently serves as Recommendation Systems Engineer at Saarthi.ai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Data Science, Weaviate, Python; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.642,
+      "semantic_fit": 0.42782944440841675,
+      "coverage": 1.0,
+      "trajectory": 0.23068740704785226,
+      "authenticity": 0.636940780282962,
+      "behavioral": 0.9174166666666667
+    },
+    "profile": {
+      "current_title": "Recommendation Systems Engineer",
+      "current_company": "Saarthi.ai",
+      "years_of_experience": 6.6
+    },
+    "yoe": 6.6
+  },
+  {
+    "candidate_id": "CAND_0044262",
+    "name": "Karan Nair",
+    "final_score": 0.6417,
+    "reasoning": "Candidate brings 6.9 years of experience and currently serves as Data Scientist at upGrad. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in YOLO, Time Series, Python; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6417,
+      "semantic_fit": 0.4875498414039612,
+      "coverage": 1.0,
+      "trajectory": 0.31884955786741703,
+      "authenticity": 0.6183374419678688,
+      "behavioral": 0.7741666666666667
+    },
+    "profile": {
+      "current_title": "Data Scientist",
+      "current_company": "upGrad",
+      "years_of_experience": 6.9
+    },
+    "yoe": 6.9
+  },
+  {
+    "candidate_id": "CAND_0051936",
+    "name": "Neha Hegde",
+    "final_score": 0.6413,
+    "reasoning": "Candidate brings 3.9 years of experience and currently serves as AI Research Engineer at Observe.AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in LoRA, Embeddings, GANs; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6413,
+      "semantic_fit": 0.5376795530319214,
+      "coverage": 0.75,
+      "trajectory": 0.49445614218711853,
+      "authenticity": 0.618574361707531,
+      "behavioral": 0.815
+    },
+    "profile": {
+      "current_title": "AI Research Engineer",
+      "current_company": "Observe.AI",
+      "years_of_experience": 3.9
+    },
+    "yoe": 3.9
+  },
+  {
+    "candidate_id": "CAND_0065790",
+    "name": "Pranav Sen",
+    "final_score": 0.6411,
+    "reasoning": "Candidate brings 3.8 years of experience and currently serves as Software Engineer at Cognizant. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in MLflow, Flask, BentoML; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6411,
+      "semantic_fit": 0.4943981468677521,
+      "coverage": 1.0,
+      "trajectory": 0.3395659426848094,
+      "authenticity": 0.6245431999117055,
+      "behavioral": 0.74075
+    },
+    "profile": {
+      "current_title": "Software Engineer",
+      "current_company": "Cognizant",
+      "years_of_experience": 3.8
+    },
+    "yoe": 3.8
+  },
+  {
+    "candidate_id": "CAND_0048375",
+    "name": "Kiara Iyer",
+    "final_score": 0.6397,
+    "reasoning": "Candidate brings 4.4 years of experience and currently serves as Computer Vision Engineer at Saarthi.ai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Weights & Biases, Weaviate, Reinforcement Learning; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6397,
+      "semantic_fit": 0.4785107374191284,
+      "coverage": 1.0,
+      "trajectory": 0.3637387520737118,
+      "authenticity": 0.6077181829131049,
+      "behavioral": 0.7520833333333334
+    },
+    "profile": {
+      "current_title": "Computer Vision Engineer",
+      "current_company": "Saarthi.ai",
+      "years_of_experience": 4.4
+    },
+    "yoe": 4.4
+  },
+  {
+    "candidate_id": "CAND_0025574",
+    "name": "Aditya Goyal",
+    "final_score": 0.6395,
+    "reasoning": "Candidate brings 2.3 years of experience and currently serves as Data Engineer at Mindtree. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in MLflow, Accounting, Data Pipelines; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6395,
+      "semantic_fit": 0.44450902938842773,
+      "coverage": 1.0,
+      "trajectory": 0.27564239501953125,
+      "authenticity": 0.6288385975578099,
+      "behavioral": 0.8525000000000001
+    },
+    "profile": {
+      "current_title": "Data Engineer",
+      "current_company": "Mindtree",
+      "years_of_experience": 2.3
+    },
+    "yoe": 2.3
+  },
+  {
+    "candidate_id": "CAND_0067866",
+    "name": "Kiara Sethi",
+    "final_score": 0.6393,
+    "reasoning": "Candidate brings 6.4 years of experience and currently serves as Senior Software Engineer (ML) at Tech Mahindra. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Embeddings, Illustrator, pgvector; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6393,
+      "semantic_fit": 0.49525660276412964,
+      "coverage": 1.0,
+      "trajectory": 0.3449248995469964,
+      "authenticity": 0.654265163129409,
+      "behavioral": 0.70425
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Tech Mahindra",
+      "years_of_experience": 6.4
+    },
+    "yoe": 6.4
+  },
+  {
+    "candidate_id": "CAND_0078042",
+    "name": "Neha Shah",
+    "final_score": 0.6389,
+    "reasoning": "Candidate brings 4.7 years of experience and currently serves as Applied ML Engineer at PolicyBazaar. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in OpenSearch, Diffusion Models, PyTorch; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6389,
+      "semantic_fit": 0.4728473722934723,
+      "coverage": 1.0,
+      "trajectory": 0.24041166570451525,
+      "authenticity": 0.636750873127837,
+      "behavioral": 0.8273333333333333
+    },
+    "profile": {
+      "current_title": "Applied ML Engineer",
+      "current_company": "PolicyBazaar",
+      "years_of_experience": 4.7
+    },
+    "yoe": 4.7
+  },
+  {
+    "candidate_id": "CAND_0002793",
+    "name": "Rajesh Mittal",
+    "final_score": 0.6376,
+    "reasoning": "Candidate brings 5.5 years of experience and currently serves as AI Specialist at Meesho. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Learning to Rank, Diffusion Models, MLflow; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6376,
+      "semantic_fit": 0.4425745904445648,
+      "coverage": 1.0,
+      "trajectory": 0.2684633566273583,
+      "authenticity": 0.585965946764032,
+      "behavioral": 0.88325
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "Meesho",
+      "years_of_experience": 5.5
+    },
+    "yoe": 5.5
+  },
+  {
+    "candidate_id": "CAND_0005538",
+    "name": "Aryan Goyal",
+    "final_score": 0.6364,
+    "reasoning": "Candidate brings 5.9 years of experience and currently serves as Senior AI Engineer at Adobe. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Project Management, Vector Representations, Deep Learning; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6364,
+      "semantic_fit": 0.5145214796066284,
+      "coverage": 0.75,
+      "trajectory": 0.43374288540620076,
+      "authenticity": 0.6577528138770896,
+      "behavioral": 0.8416666666666668
+    },
+    "profile": {
+      "current_title": "Senior AI Engineer",
+      "current_company": "Adobe",
+      "years_of_experience": 5.9
+    },
+    "yoe": 5.9
+  },
+  {
+    "candidate_id": "CAND_0049702",
+    "name": "Reyansh Trivedi",
+    "final_score": 0.6363,
+    "reasoning": "Candidate brings 4.1 years of experience and currently serves as QA Engineer at Swiggy. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Project Management, Rust, Webpack; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6363,
+      "semantic_fit": 0.4811211824417114,
+      "coverage": 1.0,
+      "trajectory": 0.3274447255664402,
+      "authenticity": 0.6038295508906981,
+      "behavioral": 0.76125
+    },
+    "profile": {
+      "current_title": "QA Engineer",
+      "current_company": "Swiggy",
+      "years_of_experience": 4.1
+    },
+    "yoe": 4.1
+  },
+  {
+    "candidate_id": "CAND_0007411",
+    "name": "Rahul Bansal",
+    "final_score": 0.6358,
+    "reasoning": "Candidate brings 8.0 years of experience and currently serves as Senior Machine Learning Engineer at Amazon. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in OpenSearch, Prompt Engineering, Fine-tuning LLMs; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6358,
+      "semantic_fit": 0.5512482523918152,
+      "coverage": 1.0,
+      "trajectory": 0.2988599075211419,
+      "authenticity": 0.6568792711870249,
+      "behavioral": 0.6354166666666667
+    },
+    "profile": {
+      "current_title": "Senior Machine Learning Engineer",
+      "current_company": "Amazon",
+      "years_of_experience": 8.0
+    },
+    "yoe": 8.0
+  },
+  {
+    "candidate_id": "CAND_0010257",
+    "name": "Ira Shetty",
+    "final_score": 0.6349,
+    "reasoning": "Candidate brings 6.5 years of experience and currently serves as Senior Data Scientist at Google. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Milvus, TensorFlow, MLflow; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6349,
+      "semantic_fit": 0.5072338581085205,
+      "coverage": 1.0,
+      "trajectory": 0.2643184454544731,
+      "authenticity": 0.6511367913113065,
+      "behavioral": 0.7270833333333334
+    },
+    "profile": {
+      "current_title": "Senior Data Scientist",
+      "current_company": "Google",
+      "years_of_experience": 6.5
+    },
+    "yoe": 6.5
+  },
+  {
+    "candidate_id": "CAND_0007567",
+    "name": "Ved Goyal",
+    "final_score": 0.6336,
+    "reasoning": "Candidate brings 6.1 years of experience and currently serves as AI Specialist at Niramai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Fine-tuning LLMs, Diffusion Models, NLP; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6336,
+      "semantic_fit": 0.43496036529541016,
+      "coverage": 1.0,
+      "trajectory": 0.32691960202323067,
+      "authenticity": 0.6082798817592071,
+      "behavioral": 0.8140000000000001
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "Niramai",
+      "years_of_experience": 6.1
+    },
+    "yoe": 6.1
+  },
+  {
+    "candidate_id": "CAND_0019480",
+    "name": "Priya Bhatia",
+    "final_score": 0.6324,
+    "reasoning": "Candidate brings 2.8 years of experience and currently serves as NLP Engineer at Meesho. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Terraform, LLMs, Forecasting; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6324,
+      "semantic_fit": 0.42361125349998474,
+      "coverage": 1.0,
+      "trajectory": 0.21331177823818653,
+      "authenticity": 0.6193114678862289,
+      "behavioral": 0.902
+    },
+    "profile": {
+      "current_title": "NLP Engineer",
+      "current_company": "Meesho",
+      "years_of_experience": 2.8
+    },
+    "yoe": 2.8
+  },
+  {
+    "candidate_id": "CAND_0020877",
+    "name": "Anil Rao",
+    "final_score": 0.6321,
+    "reasoning": "Candidate brings 5.1 years of experience and currently serves as Applied ML Engineer at CRED. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in QLoRA, Kubeflow, YOLO; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6321,
+      "semantic_fit": 0.47350168228149414,
+      "coverage": 1.0,
+      "trajectory": 0.22607239749696523,
+      "authenticity": 0.657432709608327,
+      "behavioral": 0.7876666666666668
+    },
+    "profile": {
+      "current_title": "Applied ML Engineer",
+      "current_company": "CRED",
+      "years_of_experience": 5.1
+    },
+    "yoe": 5.1
+  },
+  {
+    "candidate_id": "CAND_0006567",
+    "name": "Aditya Subramanian",
+    "final_score": 0.6314,
+    "reasoning": "Candidate brings 7.9 years of experience and currently serves as Senior AI Engineer at Meta. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Speech Recognition, scikit-learn, Search Backend; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 1,
+    "breakdown": {
+      "final": 0.6314,
+      "semantic_fit": 0.5256787538528442,
+      "coverage": 0.75,
+      "trajectory": 0.4266736416713051,
+      "authenticity": 0.6561759522239774,
+      "behavioral": 0.8063333333333335
+    },
+    "profile": {
+      "current_title": "Senior AI Engineer",
+      "current_company": "Meta",
+      "years_of_experience": 7.9
+    },
+    "yoe": 7.9
+  },
+  {
+    "candidate_id": "CAND_0042029",
+    "name": "Dhruv Joshi",
+    "final_score": 0.6298,
+    "reasoning": "Candidate brings 6.5 years of experience and currently serves as Senior Data Scientist at Flipkart. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in YOLO, PyTorch, NLP; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6298,
+      "semantic_fit": 0.4504293203353882,
+      "coverage": 1.0,
+      "trajectory": 0.22213729884889394,
+      "authenticity": 0.6486298269291946,
+      "behavioral": 0.8200833333333333
+    },
+    "profile": {
+      "current_title": "Senior Data Scientist",
+      "current_company": "Flipkart",
+      "years_of_experience": 6.5
+    },
+    "yoe": 6.5
+  },
+  {
+    "candidate_id": "CAND_0068513",
+    "name": "Tanya Joshi",
+    "final_score": 0.6298,
+    "reasoning": "Candidate brings 4.0 years of experience and currently serves as Computer Vision Engineer at Sarvam AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Forecasting, Qdrant, Prompt Engineering; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6298,
+      "semantic_fit": 0.5105007886886597,
+      "coverage": 0.75,
+      "trajectory": 0.4010111689567566,
+      "authenticity": 0.6268076973882564,
+      "behavioral": 0.8625
+    },
+    "profile": {
+      "current_title": "Computer Vision Engineer",
+      "current_company": "Sarvam AI",
+      "years_of_experience": 4.0
+    },
+    "yoe": 4.0
+  },
+  {
+    "candidate_id": "CAND_0011643",
+    "name": "Meera Patel",
+    "final_score": 0.6285,
+    "reasoning": "Candidate brings 4.2 years of experience and currently serves as AI Research Engineer at Swiggy. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Pinecone, Illustrator, Image Classification; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6285,
+      "semantic_fit": 0.5096203088760376,
+      "coverage": 0.75,
+      "trajectory": 0.43035316467285156,
+      "authenticity": 0.6139286342706066,
+      "behavioral": 0.8448333333333333
+    },
+    "profile": {
+      "current_title": "AI Research Engineer",
+      "current_company": "Swiggy",
+      "years_of_experience": 4.2
+    },
+    "yoe": 4.2
+  },
+  {
+    "candidate_id": "CAND_0005460",
+    "name": "Riya Ghosh",
+    "final_score": 0.6279,
+    "reasoning": "Candidate brings 7.0 years of experience and currently serves as Backend Engineer at Meesho. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Sales, Angular, Object Detection; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6279,
+      "semantic_fit": 0.5409250259399414,
+      "coverage": 0.75,
+      "trajectory": 0.41998503259990533,
+      "authenticity": 0.5860717546262952,
+      "behavioral": 0.82375
+    },
+    "profile": {
+      "current_title": "Backend Engineer",
+      "current_company": "Meesho",
+      "years_of_experience": 7.0
+    },
+    "yoe": 7.0
+  },
+  {
+    "candidate_id": "CAND_0029135",
+    "name": "Yash Bose",
+    "final_score": 0.6274,
+    "reasoning": "Candidate brings 5.8 years of experience and currently serves as AI Specialist at Meesho. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in FAISS, Data Science, BentoML; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6274,
+      "semantic_fit": 0.45669108629226685,
+      "coverage": 1.0,
+      "trajectory": 0.30031871795654297,
+      "authenticity": 0.6176500585751848,
+      "behavioral": 0.7633333333333334
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "Meesho",
+      "years_of_experience": 5.8
+    },
+    "yoe": 5.8
+  },
+  {
+    "candidate_id": "CAND_0033749",
+    "name": "Atharv Chatterjee",
+    "final_score": 0.6256,
+    "reasoning": "Candidate brings 4.7 years of experience and currently serves as Computer Vision Engineer at TCS. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Vector Search, Time Series, Forecasting; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6256,
+      "semantic_fit": 0.42613694071769714,
+      "coverage": 1.0,
+      "trajectory": 0.27687591314315796,
+      "authenticity": 0.6098072480105272,
+      "behavioral": 0.8240000000000002
+    },
+    "profile": {
+      "current_title": "Computer Vision Engineer",
+      "current_company": "TCS",
+      "years_of_experience": 4.7
+    },
+    "yoe": 4.7
+  },
+  {
+    "candidate_id": "CAND_0098846",
+    "name": "Shreya Saxena",
+    "final_score": 0.6254,
+    "reasoning": "Candidate brings 7.6 years of experience and currently serves as AI Engineer at upGrad. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in YOLO, Kubeflow, Hugging Face Transformers; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6254,
+      "semantic_fit": 0.5208458304405212,
+      "coverage": 0.75,
+      "trajectory": 0.3321300148963929,
+      "authenticity": 0.6345184607161515,
+      "behavioral": 0.8705
+    },
+    "profile": {
+      "current_title": "AI Engineer",
+      "current_company": "upGrad",
+      "years_of_experience": 7.6
+    },
+    "yoe": 7.6
+  },
+  {
+    "candidate_id": "CAND_0081686",
+    "name": "Naina Tiwari",
+    "final_score": 0.6246,
+    "reasoning": "Candidate brings 6.0 years of experience and currently serves as Search Engineer at Netflix. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Machine Learning, Kubeflow, Embeddings; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6246,
+      "semantic_fit": 0.431689977645874,
+      "coverage": 1.0,
+      "trajectory": 0.2376921617466471,
+      "authenticity": 0.6517214305115957,
+      "behavioral": 0.8085
+    },
+    "profile": {
+      "current_title": "Search Engineer",
+      "current_company": "Netflix",
+      "years_of_experience": 6.0
+    },
+    "yoe": 6.0
+  },
+  {
+    "candidate_id": "CAND_0062772",
+    "name": "Sanjay Shah",
+    "final_score": 0.6245,
+    "reasoning": "Candidate brings 6.6 years of experience and currently serves as Senior Software Engineer (ML) at Vedantu. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Weights & Biases, Kubeflow, Vector Search; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 1,
+    "breakdown": {
+      "final": 0.6245,
+      "semantic_fit": 0.4863280653953552,
+      "coverage": 1.0,
+      "trajectory": 0.39156666657199035,
+      "authenticity": 0.6230545654281479,
+      "behavioral": 0.6318333333333332
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Vedantu",
+      "years_of_experience": 6.6
+    },
+    "yoe": 6.6
+  },
+  {
+    "candidate_id": "CAND_0000803",
+    "name": "Sunil Desai",
+    "final_score": 0.6239,
+    "reasoning": "Candidate brings 6.7 years of experience and currently serves as Marketing Manager at Initech. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Excel, Next.js, Docker; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6239,
+      "semantic_fit": 0.577369749546051,
+      "coverage": 1.0,
+      "trajectory": 0.24309591121143764,
+      "authenticity": 0.5795727873995306,
+      "behavioral": 0.6366666666666667
+    },
+    "profile": {
+      "current_title": "Marketing Manager",
+      "current_company": "Initech",
+      "years_of_experience": 6.7
+    },
+    "yoe": 6.7
+  },
+  {
+    "candidate_id": "CAND_0081480",
+    "name": "Sneha Hegde",
+    "final_score": 0.6232,
+    "reasoning": "Candidate brings 5.6 years of experience and currently serves as Computer Vision Engineer at Sarvam AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in BM25, ASR, BentoML; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6232,
+      "semantic_fit": 0.5073440074920654,
+      "coverage": 0.75,
+      "trajectory": 0.32360319958792794,
+      "authenticity": 0.6062823645740165,
+      "behavioral": 0.9077500000000001
+    },
+    "profile": {
+      "current_title": "Computer Vision Engineer",
+      "current_company": "Sarvam AI",
+      "years_of_experience": 5.6
+    },
+    "yoe": 5.6
+  },
+  {
+    "candidate_id": "CAND_0016163",
+    "name": "Suresh Shah",
+    "final_score": 0.6227,
+    "reasoning": "Candidate brings 6.7 years of experience and currently serves as Applied ML Engineer at Dream11. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Hugging Face Transformers, Computer Vision, gRPC; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6227,
+      "semantic_fit": 0.5077750086784363,
+      "coverage": 0.75,
+      "trajectory": 0.290706983079081,
+      "authenticity": 0.6415133882822475,
+      "behavioral": 0.9025000000000001
+    },
+    "profile": {
+      "current_title": "Applied ML Engineer",
+      "current_company": "Dream11",
+      "years_of_experience": 6.7
+    },
+    "yoe": 6.7
+  },
+  {
+    "candidate_id": "CAND_0095207",
+    "name": "Ishaan Shah",
+    "final_score": 0.6225,
+    "reasoning": "Candidate brings 4.0 years of experience and currently serves as Computer Vision Engineer at Ola. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Time Series, Recommendation Systems, FAISS; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6225,
+      "semantic_fit": 0.42204219102859497,
+      "coverage": 1.0,
+      "trajectory": 0.2914766371250152,
+      "authenticity": 0.6264991874849304,
+      "behavioral": 0.7911666666666667
+    },
+    "profile": {
+      "current_title": "Computer Vision Engineer",
+      "current_company": "Ola",
+      "years_of_experience": 4.0
+    },
+    "yoe": 4.0
+  },
+  {
+    "candidate_id": "CAND_0075715",
+    "name": "Saanvi Banerjee",
+    "final_score": 0.6216,
+    "reasoning": "Candidate brings 3.5 years of experience and currently serves as Data Scientist at Sarvam AI. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Sentence Transformers, Redis, Kubeflow; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6216,
+      "semantic_fit": 0.43986743688583374,
+      "coverage": 1.0,
+      "trajectory": 0.30622666411929667,
+      "authenticity": 0.6173166972028638,
+      "behavioral": 0.7556666666666667
+    },
+    "profile": {
+      "current_title": "Data Scientist",
+      "current_company": "Sarvam AI",
+      "years_of_experience": 3.5
+    },
+    "yoe": 3.5
+  },
+  {
+    "candidate_id": "CAND_0043318",
+    "name": "Om Saxena",
+    "final_score": 0.6206,
+    "reasoning": "Candidate brings 6.2 years of experience and currently serves as Data Scientist at Freshworks. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in PEFT, Spark, RAG; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6206,
+      "semantic_fit": 0.4001932740211487,
+      "coverage": 1.0,
+      "trajectory": 0.3148122562302484,
+      "authenticity": 0.6035714801462881,
+      "behavioral": 0.8140833333333334
+    },
+    "profile": {
+      "current_title": "Data Scientist",
+      "current_company": "Freshworks",
+      "years_of_experience": 6.2
+    },
+    "yoe": 6.2
+  },
+  {
+    "candidate_id": "CAND_0061475",
+    "name": "Sanjay Subramanian",
+    "final_score": 0.6195,
+    "reasoning": "Candidate brings 4.4 years of experience and currently serves as Civil Engineer at Stark Industries. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in SAP, Flask, Airflow; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6195,
+      "semantic_fit": 0.6183757781982422,
+      "coverage": 0.75,
+      "trajectory": 0.31434103515413075,
+      "authenticity": 0.5755753312602903,
+      "behavioral": 0.7525
+    },
+    "profile": {
+      "current_title": "Civil Engineer",
+      "current_company": "Stark Industries",
+      "years_of_experience": 4.4
+    },
+    "yoe": 4.4
+  },
+  {
+    "candidate_id": "CAND_0060303",
+    "name": "Krishna Iyer",
+    "final_score": 0.6192,
+    "reasoning": "Candidate brings 4.9 years of experience and currently serves as AI Research Engineer at upGrad. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Semantic Search, ASR, Excel; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6192,
+      "semantic_fit": 0.5094473361968994,
+      "coverage": 1.0,
+      "trajectory": 0.3285367456467256,
+      "authenticity": 0.6105599107585834,
+      "behavioral": 0.6274166666666667
+    },
+    "profile": {
+      "current_title": "AI Research Engineer",
+      "current_company": "upGrad",
+      "years_of_experience": 4.9
+    },
+    "yoe": 4.9
+  },
+  {
+    "candidate_id": "CAND_0094916",
+    "name": "Arnav Dutta",
+    "final_score": 0.6188,
+    "reasoning": "Candidate brings 3.7 years of experience and currently serves as Junior ML Engineer at Tech Mahindra. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Weights & Biases, pgvector, Kubeflow; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6188,
+      "semantic_fit": 0.4266352951526642,
+      "coverage": 1.0,
+      "trajectory": 0.31937743723392487,
+      "authenticity": 0.6270102333219301,
+      "behavioral": 0.7443333333333334
+    },
+    "profile": {
+      "current_title": "Junior ML Engineer",
+      "current_company": "Tech Mahindra",
+      "years_of_experience": 3.7
+    },
+    "yoe": 3.7
+  },
+  {
+    "candidate_id": "CAND_0029817",
+    "name": "Anjali Subramanian",
+    "final_score": 0.6168,
+    "reasoning": "Candidate brings 4.2 years of experience and currently serves as Mechanical Engineer at TCS. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in PowerPoint, Flask, Databricks; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6168,
+      "semantic_fit": 0.6170441508293152,
+      "coverage": 0.75,
+      "trajectory": 0.28477960824966425,
+      "authenticity": 0.5751645387441968,
+      "behavioral": 0.7633333333333334
+    },
+    "profile": {
+      "current_title": "Mechanical Engineer",
+      "current_company": "TCS",
+      "years_of_experience": 4.2
+    },
+    "yoe": 4.2
+  },
+  {
+    "candidate_id": "CAND_0066309",
+    "name": "Meera Chopra",
+    "final_score": 0.6162,
+    "reasoning": "Candidate brings 5.3 years of experience and currently serves as Senior Software Engineer (ML) at PharmEasy. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Elasticsearch, TTS, Image Classification; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6162,
+      "semantic_fit": 0.45410990715026855,
+      "coverage": 1.0,
+      "trajectory": 0.2843380197882653,
+      "authenticity": 0.620770950406384,
+      "behavioral": 0.7210000000000001
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "PharmEasy",
+      "years_of_experience": 5.3
+    },
+    "yoe": 5.3
+  },
+  {
+    "candidate_id": "CAND_0092278",
+    "name": "Ananya Arora",
+    "final_score": 0.6159,
+    "reasoning": "Candidate brings 6.8 years of experience and currently serves as Senior NLP Engineer at Microsoft. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in TensorFlow, Machine Learning, Hugging Face Transformers; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6159,
+      "semantic_fit": 0.5599719285964966,
+      "coverage": 1.0,
+      "trajectory": 0.2932509702184926,
+      "authenticity": 0.6595216498041634,
+      "behavioral": 0.525
+    },
+    "profile": {
+      "current_title": "Senior NLP Engineer",
+      "current_company": "Microsoft",
+      "years_of_experience": 6.8
+    },
+    "yoe": 6.8
+  },
+  {
+    "candidate_id": "CAND_0007688",
+    "name": "Vivaan Goyal",
+    "final_score": 0.6153,
+    "reasoning": "Candidate brings 10.0 years of experience and currently serves as Business Analyst at Wayne Enterprises. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Spring Boot, Terraform, MongoDB; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 1,
+    "breakdown": {
+      "final": 0.6153,
+      "semantic_fit": 0.6136008501052856,
+      "coverage": 0.75,
+      "trajectory": 0.28819790936034667,
+      "authenticity": 0.5754485242962376,
+      "behavioral": 0.75825
+    },
+    "profile": {
+      "current_title": "Business Analyst",
+      "current_company": "Wayne Enterprises",
+      "years_of_experience": 10.0
+    },
+    "yoe": 10.0
+  },
+  {
+    "candidate_id": "CAND_0072547",
+    "name": "Rahul Mishra",
+    "final_score": 0.6151,
+    "reasoning": "Candidate brings 5.1 years of experience and currently serves as Senior Software Engineer (ML) at Vedantu. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Reinforcement Learning, MLOps, Webpack; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6151,
+      "semantic_fit": 0.41641780734062195,
+      "coverage": 1.0,
+      "trajectory": 0.23724907802210912,
+      "authenticity": 0.6125434281763315,
+      "behavioral": 0.81375
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Vedantu",
+      "years_of_experience": 5.1
+    },
+    "yoe": 5.1
+  },
+  {
+    "candidate_id": "CAND_0061339",
+    "name": "Tanvi Dutta",
+    "final_score": 0.6131,
+    "reasoning": "Candidate brings 4.2 years of experience and currently serves as Search Engineer at Rephrase.ai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Information Retrieval, YOLO, Data Pipelines; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6131,
+      "semantic_fit": 0.4000254273414612,
+      "coverage": 1.0,
+      "trajectory": 0.2151436170806056,
+      "authenticity": 0.6243759705953763,
+      "behavioral": 0.8359166666666669
+    },
+    "profile": {
+      "current_title": "Search Engineer",
+      "current_company": "Rephrase.ai",
+      "years_of_experience": 4.2
+    },
+    "yoe": 4.2
+  },
+  {
+    "candidate_id": "CAND_0052712",
+    "name": "Anil Chopra",
+    "final_score": 0.6126,
+    "reasoning": "Candidate brings 3.1 years of experience and currently serves as AI Research Engineer at Verloop.io. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Computer Vision, Hugging Face Transformers, Data Science; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6126,
+      "semantic_fit": 0.5353661179542542,
+      "coverage": 0.75,
+      "trajectory": 0.4073167377048068,
+      "authenticity": 0.615065501913641,
+      "behavioral": 0.7432500000000001
+    },
+    "profile": {
+      "current_title": "AI Research Engineer",
+      "current_company": "Verloop.io",
+      "years_of_experience": 3.1
+    },
+    "yoe": 3.1
+  },
+  {
+    "candidate_id": "CAND_0090155",
+    "name": "Sai Chowdary",
+    "final_score": 0.6116,
+    "reasoning": "Candidate brings 5.8 years of experience and currently serves as ML Engineer at Swiggy. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in OpenCV, Weights & Biases, GANs; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6116,
+      "semantic_fit": 0.4628371596336365,
+      "coverage": 0.75,
+      "trajectory": 0.35201590475828753,
+      "authenticity": 0.6396712434893698,
+      "behavioral": 0.86975
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "Swiggy",
+      "years_of_experience": 5.8
+    },
+    "yoe": 5.8
+  },
+  {
+    "candidate_id": "CAND_0081218",
+    "name": "Mira Agarwal",
+    "final_score": 0.6108,
+    "reasoning": "Candidate brings 4.6 years of experience and currently serves as Business Analyst at TCS. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Tailwind, TypeScript, dbt; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6108,
+      "semantic_fit": 0.5973222255706787,
+      "coverage": 0.75,
+      "trajectory": 0.3179064794726994,
+      "authenticity": 0.5707942979764687,
+      "behavioral": 0.7416666666666667
+    },
+    "profile": {
+      "current_title": "Business Analyst",
+      "current_company": "TCS",
+      "years_of_experience": 4.6
+    },
+    "yoe": 4.6
+  },
+  {
+    "candidate_id": "CAND_0033303",
+    "name": "Aadhya Mehta",
+    "final_score": 0.6105,
+    "reasoning": "Candidate brings 4.4 years of experience and currently serves as AI Specialist at Aganitha. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Information Retrieval, Six Sigma, OpenCV; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6105,
+      "semantic_fit": 0.4324008822441101,
+      "coverage": 1.0,
+      "trajectory": 0.24544081423017713,
+      "authenticity": 0.6333767279264273,
+      "behavioral": 0.7450000000000001
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "Aganitha",
+      "years_of_experience": 4.4
+    },
+    "yoe": 4.4
+  },
+  {
+    "candidate_id": "CAND_0085335",
+    "name": "Aarohi Reddy",
+    "final_score": 0.6105,
+    "reasoning": "Candidate brings 3.1 years of experience and currently serves as ML Engineer at PolicyBazaar. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Statistical Modeling, BM25, Redux; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6105,
+      "semantic_fit": 0.501376748085022,
+      "coverage": 0.75,
+      "trajectory": 0.30520064963234794,
+      "authenticity": 0.6211301926678521,
+      "behavioral": 0.85575
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "PolicyBazaar",
+      "years_of_experience": 3.1
+    },
+    "yoe": 3.1
+  },
+  {
+    "candidate_id": "CAND_0015069",
+    "name": "Ananya Agarwal",
+    "final_score": 0.6099,
+    "reasoning": "Candidate brings 1.1 years of experience and currently serves as Graphic Designer at Initech. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Excel, AWS, Flask; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6099,
+      "semantic_fit": 0.5906628370285034,
+      "coverage": 0.75,
+      "trajectory": 0.30944526195526123,
+      "authenticity": 0.5720565108970603,
+      "behavioral": 0.7525
+    },
+    "profile": {
+      "current_title": "Graphic Designer",
+      "current_company": "Initech",
+      "years_of_experience": 1.1
+    },
+    "yoe": 1.1
+  },
+  {
+    "candidate_id": "CAND_0080766",
+    "name": "Kiara Mittal",
+    "final_score": 0.6098,
+    "reasoning": "Candidate brings 8.8 years of experience and currently serves as Staff Machine Learning Engineer at Salesforce. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Search Backend, LoRA, Vue.js; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6098,
+      "semantic_fit": 0.5647232532501221,
+      "coverage": 0.75,
+      "trajectory": 0.3693750936251421,
+      "authenticity": 0.6415412375865757,
+      "behavioral": 0.6939166666666665
+    },
+    "profile": {
+      "current_title": "Staff Machine Learning Engineer",
+      "current_company": "Salesforce",
+      "years_of_experience": 8.8
+    },
+    "yoe": 8.8
+  },
+  {
+    "candidate_id": "CAND_0068351",
+    "name": "Aadhya Iyer",
+    "final_score": 0.6095,
+    "reasoning": "Candidate brings 6.4 years of experience and currently serves as Lead AI Engineer at Sarvam AI. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in pgvector, Deep Learning, Qdrant; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6095,
+      "semantic_fit": 0.5187490582466125,
+      "coverage": 0.75,
+      "trajectory": 0.3864064514636994,
+      "authenticity": 0.6474394216194642,
+      "behavioral": 0.7441666666666666
+    },
+    "profile": {
+      "current_title": "Lead AI Engineer",
+      "current_company": "Sarvam AI",
+      "years_of_experience": 6.4
+    },
+    "yoe": 6.4
+  },
+  {
+    "candidate_id": "CAND_0074225",
+    "name": "Kabir Agarwal",
+    "final_score": 0.6094,
+    "reasoning": "Candidate brings 4.3 years of experience and currently serves as Machine Learning Engineer at Unacademy. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Apache Beam, Statistical Modeling, Recommendation Systems; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6094,
+      "semantic_fit": 0.34669196605682373,
+      "coverage": 1.0,
+      "trajectory": 0.22963101830747396,
+      "authenticity": 0.6550342141001974,
+      "behavioral": 0.8632500000000001
+    },
+    "profile": {
+      "current_title": "Machine Learning Engineer",
+      "current_company": "Unacademy",
+      "years_of_experience": 4.3
+    },
+    "yoe": 4.3
+  },
+  {
+    "candidate_id": "CAND_0073883",
+    "name": "Zara Sen",
+    "final_score": 0.6093,
+    "reasoning": "Candidate brings 5.3 years of experience and currently serves as AI Specialist at Krutrim. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Redux, Reinforcement Learning, PEFT; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6093,
+      "semantic_fit": 0.464609831571579,
+      "coverage": 0.75,
+      "trajectory": 0.37637019027834356,
+      "authenticity": 0.604572861409658,
+      "behavioral": 0.8640000000000001
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "Krutrim",
+      "years_of_experience": 5.3
+    },
+    "yoe": 5.3
+  },
+  {
+    "candidate_id": "CAND_0003102",
+    "name": "Ananya Banerjee",
+    "final_score": 0.6092,
+    "reasoning": "Candidate brings 8.1 years of experience and currently serves as Mobile Developer at Mindtree. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in HTML, Tally, Next.js; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6092,
+      "semantic_fit": 0.5021499395370483,
+      "coverage": 0.75,
+      "trajectory": 0.301416032589399,
+      "authenticity": 0.619209790094457,
+      "behavioral": 0.8525
+    },
+    "profile": {
+      "current_title": "Mobile Developer",
+      "current_company": "Mindtree",
+      "years_of_experience": 8.1
+    },
+    "yoe": 8.1
+  },
+  {
+    "candidate_id": "CAND_0060715",
+    "name": "Manish Shetty",
+    "final_score": 0.6087,
+    "reasoning": "Candidate brings 3.3 years of experience and currently serves as ML Engineer at Genpact AI. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Hadoop, Vue.js, Reinforcement Learning; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6087,
+      "semantic_fit": 0.47683224081993103,
+      "coverage": 0.75,
+      "trajectory": 0.31533747911453247,
+      "authenticity": 0.6288114527405441,
+      "behavioral": 0.8700000000000001
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "Genpact AI",
+      "years_of_experience": 3.3
+    },
+    "yoe": 3.3
+  },
+  {
+    "candidate_id": "CAND_0074735",
+    "name": "Ananya Arora",
+    "final_score": 0.6083,
+    "reasoning": "Candidate brings 5.5 years of experience and currently serves as Applied ML Engineer at Rephrase.ai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in YOLO, RAG, Prompt Engineering; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6083,
+      "semantic_fit": 0.4531872272491455,
+      "coverage": 0.75,
+      "trajectory": 0.2869044062883958,
+      "authenticity": 0.6478084283465855,
+      "behavioral": 0.9109166666666666
+    },
+    "profile": {
+      "current_title": "Applied ML Engineer",
+      "current_company": "Rephrase.ai",
+      "years_of_experience": 5.5
+    },
+    "yoe": 5.5
+  },
+  {
+    "candidate_id": "CAND_0086790",
+    "name": "Aanya Kapoor",
+    "final_score": 0.6083,
+    "reasoning": "Candidate brings 3.9 years of experience and currently serves as ML Engineer at Genpact AI. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in TensorFlow, Haystack, PowerPoint; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6083,
+      "semantic_fit": 0.479891300201416,
+      "coverage": 0.75,
+      "trajectory": 0.41017333335346645,
+      "authenticity": 0.5885245403188853,
+      "behavioral": 0.8227500000000001
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "Genpact AI",
+      "years_of_experience": 3.9
+    },
+    "yoe": 3.9
+  },
+  {
+    "candidate_id": "CAND_0035542",
+    "name": "Priya Khanna",
+    "final_score": 0.6081,
+    "reasoning": "Candidate brings 11.4 years of experience and currently serves as Mechanical Engineer at Stark Industries. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Content Writing, CI/CD, Spring Boot; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6081,
+      "semantic_fit": 0.6329815983772278,
+      "coverage": 0.75,
+      "trajectory": 0.27855506997842056,
+      "authenticity": 0.5884180031555618,
+      "behavioral": 0.6906666666666667
+    },
+    "profile": {
+      "current_title": "Mechanical Engineer",
+      "current_company": "Stark Industries",
+      "years_of_experience": 11.4
+    },
+    "yoe": 11.4
+  },
+  {
+    "candidate_id": "CAND_0060109",
+    "name": "Anika Kumar",
+    "final_score": 0.608,
+    "reasoning": "Candidate brings 9.6 years of experience and currently serves as Civil Engineer at Hooli. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Rust, dbt, Redux; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.608,
+      "semantic_fit": 0.6059293746948242,
+      "coverage": 0.75,
+      "trajectory": 0.26546995685650754,
+      "authenticity": 0.5825785314853223,
+      "behavioral": 0.745
+    },
+    "profile": {
+      "current_title": "Civil Engineer",
+      "current_company": "Hooli",
+      "years_of_experience": 9.6
+    },
+    "yoe": 9.6
+  },
+  {
+    "candidate_id": "CAND_0050416",
+    "name": "Sai Dutta",
+    "final_score": 0.6077,
+    "reasoning": "Candidate brings 2.4 years of experience and currently serves as Mechanical Engineer at Stark Industries. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Data Pipelines, Django, Rust; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6077,
+      "semantic_fit": 0.5574195384979248,
+      "coverage": 0.75,
+      "trajectory": 0.41165050864219666,
+      "authenticity": 0.5784161354085049,
+      "behavioral": 0.7100000000000001
+    },
+    "profile": {
+      "current_title": "Mechanical Engineer",
+      "current_company": "Stark Industries",
+      "years_of_experience": 2.4
+    },
+    "yoe": 2.4
+  },
+  {
+    "candidate_id": "CAND_0089552",
+    "name": "Suresh Dutta",
+    "final_score": 0.6074,
+    "reasoning": "Candidate brings 6.0 years of experience and currently serves as Machine Learning Engineer at Netflix. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Weaviate, Image Classification, TensorFlow; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6074,
+      "semantic_fit": 0.46874159574508667,
+      "coverage": 1.0,
+      "trajectory": 0.24444577429029676,
+      "authenticity": 0.6526291673679426,
+      "behavioral": 0.6609999999999999
+    },
+    "profile": {
+      "current_title": "Machine Learning Engineer",
+      "current_company": "Netflix",
+      "years_of_experience": 6.0
+    },
+    "yoe": 6.0
+  },
+  {
+    "candidate_id": "CAND_0070980",
+    "name": "Manish Kumar",
+    "final_score": 0.6072,
+    "reasoning": "Candidate brings 5.0 years of experience and currently serves as Mechanical Engineer at Stark Industries. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Snowflake, Six Sigma, FastAPI; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6072,
+      "semantic_fit": 0.5981175899505615,
+      "coverage": 0.75,
+      "trajectory": 0.36337092648381775,
+      "authenticity": 0.5728583352032187,
+      "behavioral": 0.6866666666666666
+    },
+    "profile": {
+      "current_title": "Mechanical Engineer",
+      "current_company": "Stark Industries",
+      "years_of_experience": 5.0
+    },
+    "yoe": 5.0
+  },
+  {
+    "candidate_id": "CAND_0061236",
+    "name": "Om Mishra",
+    "final_score": 0.6065,
+    "reasoning": "Candidate brings 3.2 years of experience and currently serves as QA Engineer at Hooli. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Elasticsearch, Django, Redux; high recruiter responsiveness; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6065,
+      "semantic_fit": 0.5226894617080688,
+      "coverage": 0.75,
+      "trajectory": 0.2947880559497409,
+      "authenticity": 0.6248728502843013,
+      "behavioral": 0.8085
+    },
+    "profile": {
+      "current_title": "QA Engineer",
+      "current_company": "Hooli",
+      "years_of_experience": 3.2
+    },
+    "yoe": 3.2
+  },
+  {
+    "candidate_id": "CAND_0077498",
+    "name": "Aarav Kapoor",
+    "final_score": 0.6065,
+    "reasoning": "Candidate brings 5.4 years of experience and currently serves as Senior Software Engineer (ML) at Niramai. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Data Science, Speech Recognition, OpenCV; high recruiter responsiveness; actively open to new opportunities, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6065,
+      "semantic_fit": 0.4366374611854553,
+      "coverage": 1.0,
+      "trajectory": 0.29267895221710205,
+      "authenticity": 0.6235277219215644,
+      "behavioral": 0.6903333333333334
+    },
+    "profile": {
+      "current_title": "Senior Software Engineer (ML)",
+      "current_company": "Niramai",
+      "years_of_experience": 5.4
+    },
+    "yoe": 5.4
+  },
+  {
+    "candidate_id": "CAND_0000683",
+    "name": "Myra Mehta",
+    "final_score": 0.6062,
+    "reasoning": "Candidate brings 6.2 years of experience and currently serves as Graphic Designer at Dunder Mifflin. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in Flask, CSS, Accounting; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6062,
+      "semantic_fit": 0.5418384671211243,
+      "coverage": 0.75,
+      "trajectory": 0.34956901934411794,
+      "authenticity": 0.5817493393992326,
+      "behavioral": 0.77
+    },
+    "profile": {
+      "current_title": "Graphic Designer",
+      "current_company": "Dunder Mifflin",
+      "years_of_experience": 6.2
+    },
+    "yoe": 6.2
+  },
+  {
+    "candidate_id": "CAND_0068584",
+    "name": "Anika Dutta",
+    "final_score": 0.606,
+    "reasoning": "Candidate brings 6.1 years of experience and currently serves as Backend Engineer at TCS. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in TTS, CNN, Hugging Face Transformers; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.606,
+      "semantic_fit": 0.5115718245506287,
+      "coverage": 0.75,
+      "trajectory": 0.38844500647650826,
+      "authenticity": 0.6014332330452906,
+      "behavioral": 0.77
+    },
+    "profile": {
+      "current_title": "Backend Engineer",
+      "current_company": "TCS",
+      "years_of_experience": 6.1
+    },
+    "yoe": 6.1
+  },
+  {
+    "candidate_id": "CAND_0021491",
+    "name": "Aarohi Hegde",
+    "final_score": 0.6057,
+    "reasoning": "Candidate brings 6.1 years of experience and currently serves as AI Research Engineer at Wysa. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Recommendation Systems, Docker, Speech Recognition; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6057,
+      "semantic_fit": 0.4742736220359802,
+      "coverage": 0.75,
+      "trajectory": 0.37141909533076817,
+      "authenticity": 0.6356042022381672,
+      "behavioral": 0.8116666666666666
+    },
+    "profile": {
+      "current_title": "AI Research Engineer",
+      "current_company": "Wysa",
+      "years_of_experience": 6.1
+    },
+    "yoe": 6.1
+  },
+  {
+    "candidate_id": "CAND_0080465",
+    "name": "Kabir Goyal",
+    "final_score": 0.6051,
+    "reasoning": "Candidate brings 4.2 years of experience and currently serves as ML Engineer at Meesho. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in Milvus, Haystack, MLflow; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6051,
+      "semantic_fit": 0.35950857400894165,
+      "coverage": 1.0,
+      "trajectory": 0.2833603123823802,
+      "authenticity": 0.6282942745029826,
+      "behavioral": 0.8026666666666666
+    },
+    "profile": {
+      "current_title": "ML Engineer",
+      "current_company": "Meesho",
+      "years_of_experience": 4.2
+    },
+    "yoe": 4.2
+  },
+  {
+    "candidate_id": "CAND_0083005",
+    "name": "Yash Bhatia",
+    "final_score": 0.6051,
+    "reasoning": "Candidate brings 5.4 years of experience and currently serves as Mechanical Engineer at Globex Inc. Their profile demonstrates moderate semantic fit; broad coverage of JD must-haves; demonstrated expertise in GraphQL, Webpack, Time Series; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.6051,
+      "semantic_fit": 0.6304393410682678,
+      "coverage": 0.75,
+      "trajectory": 0.3083563778135512,
+      "authenticity": 0.5645950057546583,
+      "behavioral": 0.675
+    },
+    "profile": {
+      "current_title": "Mechanical Engineer",
+      "current_company": "Globex Inc",
+      "years_of_experience": 5.4
+    },
+    "yoe": 5.4
+  },
+  {
+    "candidate_id": "CAND_0089444",
+    "name": "Ela Bansal",
+    "final_score": 0.605,
+    "reasoning": "Candidate brings 4.5 years of experience and currently serves as AI Specialist at PhonePe. Their profile demonstrates broad coverage of JD must-haves; demonstrated expertise in OpenSearch, Pinecone, Weights & Biases; high recruiter responsiveness; actively open to new opportunities; a verified contact profile, indicating a moderate fit for the role.",
+    "is_disqualified": false,
+    "honeypot_flags": 0,
+    "breakdown": {
+      "final": 0.605,
+      "semantic_fit": 0.4578017592430115,
+      "coverage": 0.75,
+      "trajectory": 0.38580300410588586,
+      "authenticity": 0.630898762794817,
+      "behavioral": 0.8257500000000001
+    },
+    "profile": {
+      "current_title": "AI Specialist",
+      "current_company": "PhonePe",
+      "years_of_experience": 4.5
+    },
+    "yoe": 4.5
+  }
+]
